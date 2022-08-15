@@ -25,5 +25,5 @@
 
 <div class="card-footer">
     <button mat-raised-button color="accent" [routerLink]="['form', bookItem?.id]">EDIT INFO</button><br>
-    <button mat-raised-button color="warn" (click)="cardAction(bookItem?.id)">DELETE</button>
+    <button mat-raised-button color="warn" (click)="deleteCard(bookItem?.id)">DELETE</button>
 </div>
