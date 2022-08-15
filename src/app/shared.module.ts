@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CommandBarComponent } from './modules/shared/components/command-bar/command-bar.component';
 import {MatButtonModule} from '@angular/material/button';
 import {RouterModule} from '@angular/router';
+//import { ProfileComponent } from './modules/user/pages/profile/profile.component';
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import {RouterModule} from '@angular/router';
   imports: [
     CommonModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     CommandBarComponent
