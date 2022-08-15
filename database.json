@@ -2,32 +2,61 @@
   "books" : [
       {
         "id": 1,
-        "title": "Harry Potter 1",
-        "author": "J.K. Rowling"
+        "name": "Angular tutorials",
+        "authors": [
+          "Seiji",
+          "Villafranca"
+        ],
+        "isbn": 123456789
       },
       {
-        "title": "Harry Potter 2",
-        "author": "J.K. Rowling"
+        "id": 2,
+        "name": "Java Tutorials",
+        "authors": [
+          "Lawrence",
+          "Decamora"
+        ],
+        "isbn": 7482736286
       },
       {
-        "title": "Harry Potter 3",
-        "author": "J.K. Rowling"
+        "id": 3,
+        "name": "Database Tutorials",
+        "authors": [
+          "Jayson",
+          "Cornello"
+        ],
+        "isbn": 987654321
       }
 
   ],
 
   "blogs" : [
       {
-        "title": "Harry Potter 4",
-        "author": "J.K. Rowling"
+        "id": 1,
+        "title": "Blog_1",
+        "description": "Blog_Test",
+        "author": "Blog_Author",
+        "comments": [
+        "Blog_Comments",
+        "Blog_Comments"]
       },
       {
-        "title": "Harry Potter 5",
-        "author": "J.K. Rowling"
+        "id": 2,
+      "title": "Blog_2",
+      "description": "Blog_Test",
+      "author": "Blog_Author",
+      "comments": [
+        "Blog_Comments",
+        "Blog_Comments"]
       },
       {
-        "title": "Harry Potter 6",
-        "author": "J.K. Rowling"
+        "id": 3,
+        "title": "Blog_3",
+        "description": "Blog_Test",
+        "author": "Blog_Author",
+        "comments": [
+          "Blog_Comments",
+          "Blog_Comments"]
       }
   ]
 }

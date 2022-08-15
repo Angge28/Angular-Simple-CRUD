@@ -39,6 +39,7 @@ export class BookFormComponent implements OnInit {
       isbn: [this.bookItems[0].isbn]
     })
     this.authorsFormArray = this.bookFormGroup.get("authors") as FormArray
+    this.bookFormGroup.valueChanges.subscribe(console.log);
 
     for(let x of this.bookItems[0].authors) {
       this.authorsFormArray.push(new FormControl(x))

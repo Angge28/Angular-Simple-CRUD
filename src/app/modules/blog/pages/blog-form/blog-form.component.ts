@@ -38,7 +38,8 @@ export class BlogFormComponent implements OnInit {
       comments: this.fb.array([])
     })
 
-    this.commentsFormArray = this.blogFormGroup.get('comments') as FormArray
+    this.commentsFormArray = this.blogFormGroup.get('comments') as FormArray;
+    this.blogFormGroup.valueChanges.subscribe(console.log);
 
     for(let x of this.blogItems[0].comments){
       this.commentsFormArray.push(new FormControl(x))
