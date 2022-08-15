@@ -1,0 +1,33 @@
+{
+  "books" : [
+      {
+        "id": 1,
+        "title": "Harry Potter 1",
+        "author": "J.K. Rowling"
+      },
+      {
+        "title": "Harry Potter 2",
+        "author": "J.K. Rowling"
+      },
+      {
+        "title": "Harry Potter 3",
+        "author": "J.K. Rowling"
+      }
+
+  ],
+
+  "blogs" : [
+      {
+        "title": "Harry Potter 4",
+        "author": "J.K. Rowling"
+      },
+      {
+        "title": "Harry Potter 5",
+        "author": "J.K. Rowling"
+      },
+      {
+        "title": "Harry Potter 6",
+        "author": "J.K. Rowling"
+      }
+  ]
+}

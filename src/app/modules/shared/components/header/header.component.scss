@@ -1,0 +1,43 @@
+.title-header {
+    flex: 1 1 auto;
+    text-align: right;
+ 
+}
+
+.btn_profile{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    background-color:floralwhite;
+}
+
+.btn_blog{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    background-color: floralwhite;
+}
+
+.btn_book{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    background-color: floralwhite;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.btn_blog:hover{
+    background-color:violet;
+}
+
+.btn_book:hover{
+    background-color: violet;
+}
+
+.btn_profile:hover{
+    background-color: violet;
+}

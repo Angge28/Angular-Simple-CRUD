@@ -1,0 +1,9 @@
+<div>
+    <h1>BOOK LIST</h1>
+</div>
+<app-command-bar (deleteAllEmitter)="deleteAll()"></app-command-bar>
+<section>
+    <mat-card *ngFor="let book of books" class="example-card flex-1">
+        <app-book-item [bookItem]="book" class="app-book" (actionEmitter)="action($event)"></app-book-item>
+    </mat-card>
+</section>
