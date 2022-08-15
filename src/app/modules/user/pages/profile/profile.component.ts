@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
      email: ['', [Validators.email, Validators.required]],
      name: ['', [Validators.required]],
      bio: ['', [Validators.required]],
-     active: ['']
+     active: ['', [Validators.required]]
    })
  }
  ngOnInit(): void {
@@ -41,8 +41,9 @@ export class ProfileComponent implements OnInit {
  }
 
  submit(): void {
-   console.log(this.userFormGroup?.value);
+  console.log(this.userFormGroup?.value);
  }
+
  clear(): void {
    this.userFormGroup.reset();
  }
