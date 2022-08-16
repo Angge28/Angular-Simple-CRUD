@@ -44,25 +44,30 @@ export class BlogServiceService {
   getBlog = () => {
     return this.blog;
   }
-  setBook = (blogD: Blog) => {
+
+  setBlog = (blogD: Blog) => {
     this.blog.push(blogD)
   }
 
-  editBook = (blogD: Blog) => {
-   for(let data in this.blog) {
-    if(this.blog[data].id === blogD.id){
-      this.blog[data] = blogD
+  editBlog = (blogD: Blog) => {
+   for(let data of this.blog) {
+    if(data.id === blogD.id){
+      data.title = blogD.title
+      data.author = blogD.author
+      data.description = blogD.description
+      data.comments = blogD.comments
     }
    }
+
+   console.log(this.blog)   
+   
   }
 
   delete(id: number){
-    this.blog = this.blog.filter((data)=> data.id !== id)
+    this.blog = this.blog.filter((x)=> x.id !== id)
   }
-  
   deleteAll = () => {
     this.blog = [];
     console.log(this.blog)
   }
 }
-

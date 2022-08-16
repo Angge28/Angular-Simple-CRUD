@@ -39,7 +39,7 @@ export class BlogFormComponent implements OnInit {
     })
 
     this.commentsFormArray = this.blogFormGroup.get('comments') as FormArray;
-    this.blogFormGroup.valueChanges.subscribe(console.log);
+    //this.blogFormGroup.valueChanges.subscribe(console.log);
 
     for(let x of this.blogItems[0].comments){
       this.commentsFormArray.push(new FormControl(x))
@@ -56,9 +56,9 @@ export class BlogFormComponent implements OnInit {
   saveInfo = () => {
     const blogData = this.blogFormGroup.getRawValue() as Blog
     if(this.parameterId === 'false'){
-      return this.blogService.setBook(blogData)
+      return this.blogService.setBlog(blogData)
     }
-    return this.blogService.editBook(blogData)
+    return this.blogService.editBlog(blogData)
   }
 
   deleteComment = (i: number) => {

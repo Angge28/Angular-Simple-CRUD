@@ -16,7 +16,9 @@ export class BlogItemComponent implements OnInit {
   }
   // deleteCardAction = (actionType: string, id: any) => {
   //   this.actionEmitter.emit({type: actionType, id})
+
   deleteCard = (id: any) => {
     this.actionEmitter.emit(id)
   }  
 }
+                      
