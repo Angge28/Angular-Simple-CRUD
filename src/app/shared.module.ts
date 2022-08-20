@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CommandBarComponent } from './modules/shared/components/command-bar/command-bar.component';
 import {MatButtonModule} from '@angular/material/button';
 import {RouterModule} from '@angular/router';
+import { CommandBarComponent } from './shared/components/command-bar/command-bar.component';
 //import { ProfileComponent } from './modules/user/pages/profile/profile.component';
 
 

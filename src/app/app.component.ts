@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { filter, interval,  } from 'rxjs';
-
 
 @Component({
   selector: 'app-root',

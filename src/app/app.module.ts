@@ -9,13 +9,22 @@ import {MatCardModule} from '@angular/material/card'
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { HeaderComponent } from './modules/shared/components/header/header.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { LayoutComponent } from './shared/app-layout/layout/layout.component';
+import { RegisterComponent } from './auth-components/register-form/register/register.component';
+import { LoginComponent } from './auth-components/login-form/login/login.component';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    LayoutComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,9 +33,11 @@ import { HeaderComponent } from './modules/shared/components/header/header.compo
     MatCardModule,
     MatFormFieldModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -58,5 +58,13 @@
           "Blog_Comments",
           "Blog_Comments"]
       }
+  ],
+  "users": [
+    {
+      "email": "angge@gmail.com",
+      "password": "$2a$10$7mQUyIfSBJ9QF8sCZ6wcpO8a/YGelM13QiYHOXxSZLuPGnEqWOdWu",
+      "name": "angge",
+      "id": 1
+    }
   ]
 }

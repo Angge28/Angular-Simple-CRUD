@@ -1,59 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { 
-    height: 100%; 
-}
-
-body { 
-    margin: 0; 
-    font-family: "Helvetica Neue", sans-serif; 
-}
-
 .example-card {
-    max-width: 50%;
-    margin: 2rem;
-    margin-bottom: 8px;
+    margin: 1rem;
+    margin-bottom: 10px;
+    background-color:darkgray;
+    border-radius: 20px;
 }
+
+//direction of cards
 section {
     display: flex;
     flex-direction: row;
     margin: 10px;
     justify-content: center;
-    flex-wrap: wrap;
 
     .app-book {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        width:fit-content;
     }
 }
 
-
+//CSS for each parts of cards 
 mat-card-title-group {
-    width: 300px !important;
+    width: 250px !important;
 
+    .mat-card-subtitle{
+        color: aliceblue;
+    }
     .author-container {
         display: flex;
         flex-direction: column;
+        color: aliceblue;
     }
+
 }
 
 .card-footer {
     display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between !important;
+    flex-direction: column;
+    align-items: stretch;
     display: block;
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: rgba(0,0,0,.12);
+    border-top-color: white;
     padding: 10px 0px;
 }
+
 .title-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
     
     .title {
         text-transform: uppercase;
@@ -65,27 +63,9 @@ mat-card-title-group {
         width: 60%;
         padding: 2px 10px;
         border-radius: 15px;
-
-        button {
-            margin: 1rem;
-        }
+    
+    button {
+        margin: 1rem;        
     }
 }
-
-
-.divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
 }
-.h-custom {
-height: calc(100% - 73px);
-}
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
-}
-}
-

@@ -1,0 +1,37 @@
+#profile-form{
+  text-align: center;
+  height: 400px;
+  width: 500px !important;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 15px;
+  margin-bottom: 70px ;
+  padding: 20px;
+  
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  
+}
+.example-full-width {
+  width: 100%;
+}
+mat-label{
+  color:white;
+}
+mat-card{
+  background-color: rgb(25, 69, 83);
+  border-radius: 20px;
+}
+mat-form-field{
+  border-color: white;
+  
+}
+.submitBtn{
+  margin-right: 10px;
+}
+#submit-btn{
+  margin-left: 310px;
+}

@@ -1,23 +1,47 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './auth-components/login-form/login/login.component';
+import { RegisterComponent } from './auth-components/register-form/register/register.component';
+import { AuthGuard } from './core/guards/auth.guard';
+import { LayoutComponent } from './shared/app-layout/layout/layout.component';
 
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "blog",
+    redirectTo: "login",
     pathMatch: "full"
   },
   {
-    path: "book",
-    loadChildren: () => import('./modules/book/book.module').then( book => book.BookModule)
+    path: "register",
+    component: RegisterComponent
   },
   {
-    path: 'blog',
-    loadChildren: () => import('./modules/blog/blog.module').then( blog => blog.BlogModule)
+    path: "login",
+    component: LoginComponent
+    
   },
   {
-    path: 'profile',
-    loadChildren: () => import('./modules/user/user.module').then(user => user.UserModule)
+    path: '',
+    component: LayoutComponent,
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: "book",
+        loadChildren: () => import('./book/book.module').then( book => book.BookModule),
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'blog',
+        loadChildren: () => import('./blog/blog.module').then( blog => blog.BlogModule),
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./user/user.module').then(profile => profile.UserModule),
+        canActivate: [AuthGuard],
+        
+      },
+    ]
   }
 ];
 
