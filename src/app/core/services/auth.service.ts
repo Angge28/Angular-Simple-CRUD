@@ -15,7 +15,7 @@ export class AuthService {
 
   // private token: string = ''
   endpoint: string = 'http://localhost:3000';
-  headers = new HttpHeaders().set('Content-Type', 'application/json');
+  
   currentUser = {};
 
   constructor(private http: HttpClient, private router: Router) { }
