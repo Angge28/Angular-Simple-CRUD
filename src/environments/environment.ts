@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url: "https://json-server-seven-mock.herokuapp.com"
+  //url: "https://json-server-seven-mock.herokuapp.com"
+  url: "http://localhost:3000"
 };
 
 /*

@@ -14,7 +14,7 @@ import { environment } from 'src/environments/environment';
 export class AuthService {
 
   // private token: string = ''
-  endpoint: string = '';
+  endpoint: string = 'http://localhost:3000';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   currentUser = {};
 
