@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  //url: "https://json-server-seven-mock.herokuapp.com"
   //url: "angge-fake-auth-server-app"
   url: "http://localhost:3000"
 };
